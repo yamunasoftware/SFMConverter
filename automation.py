@@ -7,10 +7,10 @@ def execute_python_file(file_path, input, output):
     print(f"Error: The file '{file_path}' does not exist.")
 
 def run():
-  files = os.listdir('jsons')
+  files = os.listdir()
   for file in files:
     if '.json' in file:
-      execute_python_file('sfm_converter.py', 'jsons/' + file, 'out/' + file)
-      execute_python_file('sfm_collection_converter.py', 'jsons/' + file, 'out/collection-' + file)
+      execute_python_file('sfm_converter.py', file, 'out/' + file)
+      execute_python_file('sfm_collection_converter.py', file, 'out/collection-' + file)
 
 run()
