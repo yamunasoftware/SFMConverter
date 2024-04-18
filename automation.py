@@ -2,7 +2,7 @@ import os
 
 def execute_python_file(file_path, input, output):
   try:
-    os.system(f'python {file_path} {input} {output}')
+    os.system(f'python3 {file_path} {input} {output}')
   except FileNotFoundError:
     print(f"Error: The file '{file_path}' does not exist.")
 

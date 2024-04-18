@@ -8,4 +8,17 @@ SFM or Social Feed Manager is a tweet storage format that is used at many Univer
 
 ## Usage
 
-The simple way to use this script is to upload all of your input JSON files into the root directory of the project. Then, run the ```runner.sh``` or ```runner.bat``` file (based on your operating system) to run both of the automation scripts concurrently. The output json files are stored in the ```out``` directory and the collections outputs are stored under the ```collections``` directory. The output files are under the names of the input json file and the collection outputs are under the name ```collection-#inputfile.json```. Thus it should be easy to distinguish between the JSON files and formats, based on the names and directories.
+The simple way to use this script is to upload all of your input JSON files into the root directory of the project. Then, run the ```runner.sh``` file (you must use Linux) to run both of the automation scripts concurrently. The output json files are stored in the ```out``` directory and the collections outputs are stored under the ```collections``` directory. The output files are under the names of the input json file and the collection outputs are under the name ```collection-#inputfile.json```. Thus it should be easy to distinguish between the JSON files and formats, based on the names and directories.
+
+## Dependencies
+
+The conversion and automation scripts use the following python modules:
+
+- ```os```
+- ```sys```
+- ```ujson```
+- ```copy```
+
+However, the only dependency that needs to be installed is ```ujson```. To install ```ujson``` you have to run the following command:
+
+```pip install ujson```
