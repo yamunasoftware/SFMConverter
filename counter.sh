@@ -2,4 +2,3 @@
 
 echo "Started."
 python3 count.py
-echo "Done."
