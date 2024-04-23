@@ -8,7 +8,7 @@ SFM or Social Feed Manager is a tweet storage format that is used at many Univer
 
 ## Usage
 
-The simple way to use this script is to upload all of your input JSON files into the base directory of where your conversions scripts are located. Then, run the ```runner.sh``` file (you must use Linux) to run both of the automation scripts concurrently. The easiest way to do this is to input ```bash runner.sh``` into your command line.
+The simple way to use this script is to upload all of your input JSON files into the base directory of where your conversions scripts are located. Then, run the ```runner.sh``` file to run both of the automation scripts concurrently. The easiest way to do this is to input ```bash runner.sh``` into your command line.
 
 The output json files are stored in the ```out``` directory and the collections outputs are stored under the ```collections``` directory. The output files are under the names of the input json file and the collection outputs are under the name ```collection-#inputfile.json```. Thus it should be easy to distinguish between the JSON files and formats, based on the names and directories.
 
