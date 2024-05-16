@@ -2,4 +2,4 @@
 
 echo "Started."
 python3 sequential.py
-echo "Done."
+echo "Duration: $SECONDS seconds"
